@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .container {
+            display: flex;
+            /* flex-direction: row;  position at left*/
+            /* flex-direction: row-reverse; position at right in revered order */ 
+            /* flex-direction: column; position at left */
+            /* flex-direction: column-reverse; position at left in revered order */
+
+            flex-direction: row;
+
+            /* justify-content: flex-start; horizontal align at left position default */
+            /* justify-content: flex-end; horizontal align at right position */
+            /* justify-content: center; align center  */
+            /* justify-content: flex-start;
+            justify-content: flex-end;
+            justify-content: center;
+            justify-content: baseline; */
+            /* align-items: flex-start; */
+            /* align-items: flex-end; */
+            /* align-items: center; */
+            /* align-items: center; */
+            flex-wrap: wrap;
+
+
+        }
+        .box {
+            border:  1px solid black;
+            width: 200px;
+            height: 200px;
+            margin: 2px;
+        }
+        #box3{
+            /* flex-shrink: 2; Shrink 2 time more than others */
+            /* flex-grow: 2; Grow 2 times more than other */
+            /* order: 2; change the order of manually */
+        }
+        #box1 {
+            order: 3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box" id="box1">1</div>
+        <div class="box">2</div>
+        <div class="box" id="box3">3</div>
+        <div class="box">4</div>
+        
+    </div>
+</body>
+</html>
